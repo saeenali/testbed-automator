@@ -14,7 +14,7 @@ A simple Ubuntu container can be very helpful in debugging; it can easily let us
 For this lab, we will utilize the `ghcr.io/niloysh/toolbox:v1.0.0` image, which is an Ubuntu-based image preloaded with a selection of commonly used tools, including ping, net-tools, and more.
 
 ### The YAML manifest file
-The following YAML will deploy a Pod with a container running the Ubuntu docker image that sleeps for one week. We need to actually make the container **do something**, else it will immediately exit; hence the we make it sleep for some time. 
+The following YAML will deploy a Pod with a container running the Ubuntu docker image that sleeps for one week. We need to actually make the container **do something**, else it will immediately exit; hence we make it sleep for some time. 
 
 ```yaml
 apiVersion: v1
@@ -34,7 +34,7 @@ spec:
   restartPolicy: Always
 ```
 
-Create a `ubuntu-pod.yaml` file with the yaml above. Then you can apply the configuration as follows
+Create a `ubuntu-pod.yaml` file with the yaml above. Then you can apply the configuration as follows:
 ```bash
 cd labs
 kubectl apply -f ubuntu-pod.yaml
