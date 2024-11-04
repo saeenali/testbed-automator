@@ -124,7 +124,7 @@ kubectl get pods -n workshop
 Services allow you to expose a set of Pods as a network service, making it possible for other resources to communicate with them. This can be used to expose an application within or outside the cluster. In our 5G core network, network functions communicate with each other using services.
 
 ### Deploy an nginx Pod
-To understand services, first let's deploy an nginx pod that will server HTTP traffic on port 80. This will allow us to test connectivity from other pods such as the ubuntu pod we deployed earlier.
+To understand services, first let's deploy an nginx pod that will serve HTTP traffic on port 80. This will allow us to test connectivity from other pods such as the ubuntu pod we deployed earlier.
 
 ```yaml
 apiVersion: v1
